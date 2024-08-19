@@ -1,0 +1,98 @@
+/* ---------------------------------------------------------------------------*/
+/* MOBILE FIRST - page/page-maintenance.scss                                      */
+/* ---------------------------------------------------------------------------*/
+@charset "UTF-8";
+
+#maintenance-page {
+  display        : flex;
+  height         : 100vh;
+  justify-content: center;
+  min-height     : 100%;
+}
+#maintenance-page .wrapper {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+  height         : 100%;
+}
+#maintenance-page #header-maintenance {
+  width  : 100%;
+  display: block;
+}
+#maintenance-page .site-message {
+  background-color: #fae042;
+}
+
+#maintenance-page .site-name a {
+  color: #231f20;
+}
+#maintenance-page .site-name {
+  margin-bottom: 1rem;
+}
+
+#maintenance-page .wrapper-logo {
+  width     : 100%;
+  text-align: center;
+}
+#maintenance-page .wrapper-logo a {
+  display: inline-block;
+}
+#maintenance-page .site-logo {
+  width        : 200px;
+  margin-right : 0;
+  float        : left;
+  margin-bottom: 1rem;
+}
+#maintenance-page .site-name {
+  font-size : 1.4rem;
+  text-align: center;
+}
+#maintenance-page .site-slogan {
+  font-weight: 400;
+  font-size  : 1.25rem;
+  text-align : center;
+}
+#maintenance-page .site-message {
+  margin-top      : 2rem;
+  background-color: $gray-100;
+  border-radius   : $border-radius;
+}
+
+@media (min-width: 576px) {
+
+  .site-message {
+    text-align: justify;
+
+  }
+  #maintenance-page .site-slogan {
+    text-align: left;
+    text-align: justify;
+  }
+  #maintenance-page .wrapper-logo {
+    width: auto;
+  }
+  #maintenance-page .wrapper-logo a {
+    display: block;
+  }
+  #maintenance-page .site-name {
+    text-align: left;
+    font-size : 2rem;
+  }
+  #maintenance-page .site-logo {
+    margin-right : 1.5rem;
+    margin-bottom: 0;
+  }
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = BREAKPOINT MEDIUM ≥ 768PX = = = */
+@media (min-width: 768px) {
+  #maintenance-page .site-slogan {
+    min-width: 600px;
+    max-width: 600px;
+  }
+  #maintenance-page .site-message {
+    min-width: 600px;
+    max-width: 600px;
+  }
+}

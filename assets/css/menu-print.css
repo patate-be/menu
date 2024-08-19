@@ -1,0 +1,17 @@
+body {
+  /*font-size: 1.25rem;*/
+}
+#page-menu h2 {
+  border-bottom : 2px solid #231f20;
+  text-align    : center;
+  padding-bottom: .5rem;
+  margin-top    : .5rem;
+  margin-bottom : .5rem;
+  font-size     : 1.45rem;
+}
+br {
+  display: none;
+}
+.list {
+  padding-left: .6rem;
+}
